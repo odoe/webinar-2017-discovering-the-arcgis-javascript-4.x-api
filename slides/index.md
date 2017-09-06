@@ -1,11 +1,12 @@
-<!-- .slide: data-background="./images/title.png" -->
-
-<!-- Presenter: Matt -->
-# Discovering the ArcGIS API 4 for JavaScript
+<!-- .slide: data-background="images/webinar-start.jpg" -->
 
 ---
 
-<!-- .slide: data-background="./images/section-background.png" -->
+<!-- .slide: data-background="images/webinar-title.jpg" -->
+
+
+---
+
 # Presenters
 
 ### Andy Gup – [@agup](https://twitter.com/agup)
@@ -26,9 +27,6 @@
 
 ---
 
-<!-- Presenter: Rene -->
-<!-- .slide: data-background="./images/section-background.png" -->
-
 # Introduction to the ArcGIS API 4 for JavaScript
 
 - Simplified and consistent API <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -47,7 +45,6 @@
 ```
 
 ---
-<!-- .slide: data-background="./images/section-background.png" -->
 
 ## Fundamentals and Patterns
 
@@ -241,8 +238,6 @@ const layer = map.allLayers.find((layer) => {
 <iframe height='600' scrolling='no' title='Webinar - VectorTileLayer' src='//codepen.io/odoe/embed/EvJbrd/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/EvJbrd/'>Webinar - VectorTileLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-## LayerViews
-
 ---
 
 ## LayerViews
@@ -354,8 +349,6 @@ const view = new MapView({
 
 ---
 
-<!-- Presenter: Matt -->
-<!-- .slide: data-background="./images/section-background.png" -->
 # Widgets!
 
 - ~20 Widgets out of the box <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -432,18 +425,11 @@ var bgExpand = new Expand({
 
 Useful [view properties](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#properties-summary) for building apps
 
-- height
-- width
-- heightBreakpoint
-- widthBreakpoint
-- orientation
-- size
-- padding
 - ui
+- padding
 
 ---
 
-<!-- .slide: data-background="./images/section-background.png" -->
 # View UI
 
 - View has `ui` property
@@ -460,11 +446,16 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 
 ---
 
-<!-- .slide: data-background="images/demo-background.png" -->
-# Demo
+## Components Demo
 
-- [Components Demo](../demos/view-ui/view-ui-expand.html)
-- [UI Positions Demo](../demos/view-ui/view-ui-positions.html)
+<iframe height='600' scrolling='no' title='Components' src='//codepen.io/odoe/embed/MvdOXm/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/MvdOXm/'>Components</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
+## Positions Demo
+
+- [UI Positions Demo](https://codepen.io/odoe/pen/mMYqGZ?editors=0010)
 
 ---
 
@@ -476,29 +467,9 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 
 ---
 
-<!-- .slide: data-background="images/demo-background.png" -->
 # Demo
 
 - [View Padding Demo](../demos/view-padding/panel-view-padding.html)
-
----
-
-# View: Sizing
-
-Useful view sizing properties
-
-- height
-- width
-- heightBreakpoint
-- widthBreakpoint
-- orientation
-- size
-
----
-
-# View: Breakpoints
-
-- [Breakpoints SDK](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#breakpoints)
 
 ---
 
@@ -522,11 +493,33 @@ Useful view sizing properties
 
 ---
 
-<!-- .slide: data-background="images/demo-background.png" -->
 # Demo
 
 - [View UI Sizes](../demos/view-sizes/panel-dynamic.html)
 
+---
+
+# Platform Integration
+
+---
+
+# Questions
+
+---
+
+# Visualizations
+
+---
+
+# Upcoming Features
+
+---
+
+# Framework Integration
+
+---
+
+# Custom Builds
 
 ---
 
@@ -567,4 +560,4 @@ Useful view sizing properties
 
 ---
 
-<!-- .slide: data-background="images/end-background.png" -->
+<!-- .slide: data-background="images/webinar-end.jpg" -->
