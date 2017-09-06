@@ -523,9 +523,94 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 
 ---
 
+## Custom Builds
+- [Dojo](https://github.com/Esri/jsapi-resources/tree/master/4.x/bower/dojo)
+- [Webpack](https://github.com/odoe/odoenet-esrijs)
+
+---
+
+## Dojo Builds
+
+- Pros
+  - Compact
+  - Single file and layer builds (bundles)
+- Cons
+  - Not fast
+  - Can be complicated
+
+---
+
+## Dojo Builds
+
+- `build.profile.js`
+
+```js
+var profile = {
+  ...
+    layers: {
+    "dojo/dojo": {
+      boot: true,
+      customBase: true,
+      include: [
+        "app/main",
+        ...
+      ]
+    },
+    "esri/views/2d/layers/VectorTileLayerView2D": {
+      ...
+    },
+    "esri/core/workers/WorkerConnection": {
+      ...
+    },
+    "esri/views/vectorTiles/WorkerTileHandler": {
+      ...
+  },
+  ...
+};
+```
+
+---
+
+## Webpack Builds
+
+- Pros
+  - Fast
+  - Lots of community support
+- Cons
+  - Not fully compatible with Dojo loader
+  - Built apps require CDN
+
+---
+
+## Webpack Builds
+
+- `webpack.config.js`
+- ignore the `esri` and `dojo` modules
+
+```js
+module.exports = {
+  ...
+  externals: [
+    function(context, request, callback) {
+      if (
+        /^dojo/.test(request) ||
+        /^dojox/.test(request) ||
+        /^dijit/.test(request) ||
+        /^esri/.test(request)
+      ) {
+        return callback(null, "amd " + request);
+      }
+      callback();
+    }
+  ]
+};
+```
+
+---
+
 # JSAPI Resources
 - TypeScript definition files
-- Bower
+- Bower/NPM build samples
 - JSHint
 
 [esriurl.com/resources](http://esriurl.com/resources)
