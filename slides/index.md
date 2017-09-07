@@ -32,16 +32,40 @@
 - Simplified and consistent API <!-- .element: class="fragment" data-fragment-index="1" -->
 - Write apps in ES6 or TypeScript <!-- .element: class="fragment" data-fragment-index="1" -->
 - Modern browser support (IE11+) <!-- .element: class="fragment" data-fragment-index="1" -->
+- 3D support (No plugin required!) <!-- .element: class="fragment" data-fragment-index="1" -->
+- And many more! <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
 # Where to begin?
 
+<br>
+
 - https://developers.arcgis.com/javascript
+
+<br>
 
 ```
 <link rel="stylesheet" href="https://js.arcgis.com/4.4/esri/css/main.css">
 <script src="https://js.arcgis.com/4.4/"></script>
+```
+
+---
+
+## Hello World Map
+
+<br>
+
+```js
+  var map = new Map({
+    basemap: "streets"
+  });
+
+  var view = new MapView({
+    container: "viewDiv",  
+    map: map               
+  });
+
 ```
 
 ---
@@ -501,6 +525,10 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 
 # Platform Integration
 
+<br>
+## Creating Services
+## Importing Web Maps and Scenes
+
 ---
 
 # Questions
@@ -515,7 +543,22 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 
 ---
 
-# Framework Integration
+# 3rd Party JS Frameworks
+# Module loaders
+- Open-source helper libraries and wrappers
+- Small internal + large external community effort
+- Not officially supported by Esri Tech Support
+
+
+---
+
+# 3rd Party JS Frameworks
+# Module loaders
+- [esri-loader](https://github.com/Esri/esri-loader)
+- [angular-esri-loader](https://github.com/tomwayson/angular-esri-loader)
+- [ember-esri-loader](https://github.com/Esri/ember-esri-loader)
+- [esri-loader-react](https://github.com/davetimmins/esri-loader-react)
+
 
 ---
 
@@ -660,23 +703,16 @@ module.exports = {
 
 ---
 
-# JSAPI Resources
-- TypeScript definition files
-- Bower/NPM build samples
-- JSHint
-
-[esriurl.com/resources](http://esriurl.com/resources)
-
----
-
-# Geonet
-[![Geonet](./images/geonet.png)](https://geonet.esri.com/community/developers/web-developers/arcgis-api-for-javascript)
-
+# Developer Resources
+- [TypeScript definition files, Bower, JSHint](http://esriurl.com/resources)
+- [github.com/esri](https://github.com/esri)
+- [GeoNet Community for Web Developers](https://geonet.esri.com/community/developers/web-developers/arcgis-api-for-javascript)
 
 ---
 
 # Blogs
 - [ArcGIS Blog](https://blogs.esri.com/esri/arcgis/tag/javascript/)
+- [GeoDev Blog](https://geonet.esri.com/groups/geodev)
 - [odoe.net](http://odoe.net/blog/)
 
 ---
@@ -687,13 +723,24 @@ module.exports = {
 
 ---
 
-# Questions?
+# Take our quick survey!
+### URL goes here?  
 
-![questions](./images/questions.gif)
+<br>
+ 
+# Sign up for future webinars!
+### URL goes here?
+ 
 
 ---
 
-# Thank you!
+
+# Questions
+
+![questions](./images/questions.gif)
+
+## developeroutreach@esri.com
+
 
 ---
 
