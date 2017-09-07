@@ -557,8 +557,8 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 - [esri-loader](https://github.com/Esri/esri-loader)
 - [angular-esri-loader](https://github.com/tomwayson/angular-esri-loader)
 - [ember-esri-loader](https://github.com/Esri/ember-esri-loader)
+- [ember-cli-amd](https://github.com/Esri/ember-cli-amd)
 - [esri-loader-react](https://github.com/davetimmins/esri-loader-react)
-
 
 ---
 
@@ -566,6 +566,7 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 
 - React
 - Angular (version of choice)
+- Ember
 - VueJS
 
 ---
@@ -598,6 +599,16 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 
 ## Framework Integration
 
+- Ember
+  - Full-blown framework
+  - Started the cli craze
+  - Great for teams!
+  - Use the `ember-esri-loader` or `ember-cli-amd`
+
+---
+
+## Framework Integration
+
 - Vue
   - Super simple to get started
   - Has a cli too!
@@ -608,7 +619,7 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 ## Framework Integration (BONUS!)
 
 - Elm
-  - Really a new language
+  - Completely new programming language
   - Comes with a UI architecture built-in
   - [elm-jsapi4](https://github.com/odoe/elm-jsapi4)
 
