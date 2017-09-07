@@ -519,6 +519,58 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 
 ---
 
+## Framework Integration
+
+- React
+- Angular (version of choice)
+- VueJS
+
+---
+
+## Framework Integration
+
+- React
+ - Vanilla React (`setState()`)
+ - Redux
+ - Preact
+
+---
+
+## Framework Integration
+
+- React
+- [react-redux-js4](https://github.com/Esri/react-redux-js4)
+
+---
+
+## Framework Integration
+
+- Angular
+  - _In all it's forms_
+  - Changing often!
+  - Try to keep up
+  - [angular2-esri-playground](https://github.com/jwasilgeo/angular2-esri-playground)
+
+---
+
+## Framework Integration
+
+- Vue
+  - Super simple to get started
+  - Has a cli too!
+  - [vue-jsapi4](https://github.com/odoe/vue-jsapi4)
+
+---
+
+## Framework Integration (BONUS!)
+
+- Elm
+  - Really a new language
+  - Comes with a UI architecture built-in
+  - [elm-jsapi4](https://github.com/odoe/elm-jsapi4)
+
+---
+
 # Custom Builds
 
 ---
