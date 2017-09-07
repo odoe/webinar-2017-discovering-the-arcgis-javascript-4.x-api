@@ -14,11 +14,10 @@
     - Overview
     - Popup
     - UI Container
-    - Custom Actions
-  - Platform Integration
-    - Upload CSV
-    - WebMap and WebScene
 ## Questions
+## Platform Integration
+  - Upload CSV
+  - WebMap and WebScene
 ## Visualizations
   - Updating Symbology (symbol playground)
   - Arcade expressions

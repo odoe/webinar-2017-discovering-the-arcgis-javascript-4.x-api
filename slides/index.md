@@ -57,11 +57,11 @@
 <br>
 
 ```js
-  var map = new Map({
+  const map = new Map({
     basemap: "streets"
   });
 
-  var view = new MapView({
+  const view = new MapView({
     container: "viewDiv",  
     map: map               
   });
@@ -539,6 +539,19 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 
 ---
 
+## Visualizations
+
+- Smart Mapping (platform)
+- Consumable via Portal Items
+
+---
+
+## Visualizations
+
+- Arcade Expressions
+
+---
+
 # Upcoming Features
 
 ---
@@ -577,13 +590,7 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
  - Vanilla React (`setState()`)
  - Redux
  - Preact
-
----
-
-## Framework Integration
-
-- React
-- [react-redux-js4](https://github.com/Esri/react-redux-js4)
+ - [react-redux-js4](https://github.com/Esri/react-redux-js4)
 
 ---
 
@@ -593,7 +600,6 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
   - _In all it's forms_
   - Changing often!
   - Try to keep up
-  - [angular2-esri-playground](https://github.com/jwasilgeo/angular2-esri-playground)
 
 ---
 
