@@ -524,10 +524,12 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 ---
 
 # Platform Integration
+### With ArcGIS Portal and ArcGIS Online
 
 <br>
-## Creating Services
-## Importing Web Maps and Scenes
+- Creating Hosted Services
+- ArcGIS REST API
+- Importing Web Maps and Scenes
 
 ---
 
@@ -548,7 +550,15 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 
 ## Visualizations
 
+- Renderers
 - Arcade Expressions
+
+---
+
+## Visualizations
+
+- 3D Maps
+- 3D Symbology
 
 ---
 
