@@ -133,7 +133,7 @@ const map = new Map({
 
 - or by specifying them
 
-<iframe height='600' scrolling='no' title='Basemaps' src='//codepen.io/odoe/embed/WEPydQ/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/WEPydQ/'>Basemaps</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Basemaps' src='//codepen.io/odoe/embed/preview/WEPydQ/?height=600&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/WEPydQ/'>Basemaps</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -160,32 +160,8 @@ const map = new Map({
 
 - `Map.layers` contains `Layer` objects with the operational data the user interacts with.
 
-<iframe height='600' scrolling='no' title='Webinar - Add a FeatureLayer' src='//codepen.io/odoe/embed/YxJEba/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/YxJEba/'>Webinar - Add a FeatureLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Webinar - Add a FeatureLayer' src='//codepen.io/odoe/embed/preview/YxJEba/?height=300&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/YxJEba/'>Webinar - Add a FeatureLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
----
-
-## Basemap, Ground and Operational Layers
-
-- At any point you can modify any on those groups of layers using the `Collection` API.
-
-```js
-// basemap
-map.basemap.baseLayers.add(layer);
-map.basemap.baseLayers.addMany([layer]);
-map.basemap.baseLayers.remove(layer);
-map.basemap.baseLayers.removeMany([layer]);
-map.basemap.baseLayers.removeAll();
-
-map.basemap.referenceLayers.add(layer);
-
-map.ground.add(layer);
-
-map.layers.add(layer);
-
-// short hand
-map.add(layer);
-```
 
 ---
 
@@ -193,7 +169,7 @@ map.add(layer);
 
 - `GroupLayer`
 
-<iframe height='600' scrolling='no' title='Webinar - Grouplayer' src='//codepen.io/odoe/embed/RZOjrv/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/RZOjrv/'>Webinar - Grouplayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Webinar - Grouplayer' src='//codepen.io/odoe/embed/preview/RZOjrv/?height=600&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/RZOjrv/'>Webinar - Grouplayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -232,7 +208,7 @@ const layer = map.allLayers.find((layer) => {
 
 - `Layer.fromPortalItem(...)`
 
-<iframe height='600' scrolling='no' title='Portal Items' src='//codepen.io/odoe/embed/OjQLmK/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/OjQLmK/'>Portal Items</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Portal Items' src='//codepen.io/odoe/embed/preview/OjQLmK/?height=600&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/OjQLmK/'>Portal Items</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -241,7 +217,7 @@ const layer = map.allLayers.find((layer) => {
 
 - MapImageLayer
 
-<iframe height='600' scrolling='no' title='Webinar - MapImageLayer' src='//codepen.io/odoe/embed/EvJbvE/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/EvJbvE/'>Webinar - MapImageLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Webinar - MapImageLayer' src='//codepen.io/odoe/embed/preview/EvJbvE/?height=600&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/EvJbvE/'>Webinar - MapImageLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -250,7 +226,7 @@ const layer = map.allLayers.find((layer) => {
 
 - MapImageLayer
 
-<iframe height='600' scrolling='no' title='Webinar - MapImageLayer - Renderer' src='//codepen.io/odoe/embed/rzbYqv/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/rzbYqv/'>Webinar - MapImageLayer - Renderer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Webinar - MapImageLayer - Renderer' src='//codepen.io/odoe/embed/preview/rzbYqv/?height=600&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/rzbYqv/'>Webinar - MapImageLayer - Renderer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -259,7 +235,7 @@ const layer = map.allLayers.find((layer) => {
 
 - VectorTileLayer
 
-<iframe height='600' scrolling='no' title='Webinar - VectorTileLayer' src='//codepen.io/odoe/embed/EvJbrd/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/EvJbrd/'>Webinar - VectorTileLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Webinar - VectorTileLayer' src='//codepen.io/odoe/embed/preview/EvJbrd/?height=600&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/EvJbrd/'>Webinar - VectorTileLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -319,7 +295,7 @@ const layer = map.allLayers.find((layer) => {
 
 ## LayerViews
 
-<iframe height='600' scrolling='no' title='FeatureLayer' src='//codepen.io/odoe/embed/vJdVpQ/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/vJdVpQ/'>FeatureLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='FeatureLayer' src='//codepen.io/odoe/embed/preview/vJdVpQ/?height=600&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/vJdVpQ/'>FeatureLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -356,7 +332,7 @@ const view = new MapView({
 
 - Property watching
 
-<iframe height='600' scrolling='no' title='Property Changes' src='//codepen.io/odoe/embed/LjKaxj/?height=366&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/LjKaxj/'>Property Changes</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Property Changes' src='//codepen.io/odoe/embed/preview/LjKaxj/?height=366&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/LjKaxj/'>Property Changes</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -398,7 +374,7 @@ const view = new MapView({
 
 ---
 
-<iframe height='600' scrolling='no' title='Popup Docking' src='//codepen.io/odoe/embed/qXwoRy/?height=265&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/qXwoRy/'>Popup Docking</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Popup Docking' src='//codepen.io/odoe/embed/preview/qXwoRy/?height=265&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/qXwoRy/'>Popup Docking</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -460,7 +436,7 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 
 ## Components Demo
 
-<iframe height='600' scrolling='no' title='Components' src='//codepen.io/odoe/embed/MvdOXm/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/MvdOXm/'>Components</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Components' src='//codepen.io/odoe/embed/preview/MvdOXm/?height=600&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/MvdOXm/'>Components</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -485,29 +461,13 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 
 ---
 
-# View UI: CSS
-
-- Breakpoints also add classes on view
-
-```css
-.esri-view esri-view-height-xsmall,
-.esri-view-height-less-than-small,
-.esri-view-height-less-than-medium,
-.esri-view-height-less-than-large,
-.esri-view-height-less-than-xlarge,
-.esri-view-width-xlarge,
-.esri-view-width-greater-than-xsmall,
-.esri-view-width-greater-than-small,
-.esri-view-width-greater-than-medium,
-.esri-view-width-greater-than-large,
-.esri-view-orientation-landscape {}
-```
+# Demo
+// maybe cut
+- [View UI Sizes](../demos/view-sizes/panel-dynamic.html)
 
 ---
 
-# Demo
-
-- [View UI Sizes](../demos/view-sizes/panel-dynamic.html)
+# Break - Questions
 
 ---
 
@@ -518,10 +478,6 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 - Creating Hosted Services
 - ArcGIS REST API
 - Importing Web Maps and Scenes
-
----
-
-# Questions
 
 ---
 
@@ -594,15 +550,6 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 
 ## Framework Integration
 
-- Angular
-  - _In all it's forms_
-  - Changing often!
-  - Try to keep up
-
----
-
-## Framework Integration
-
 - Ember
   - Full-blown framework
   - Started the cli craze
@@ -626,6 +573,15 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
   - Completely new programming language
   - Comes with a UI architecture built-in
   - [elm-jsapi4](https://github.com/odoe/elm-jsapi4)
+
+---
+
+## Framework Integration
+
+- Angular
+  - _In all it's forms_
+  - Changing often!
+  - Try to keep up
 
 ---
 
