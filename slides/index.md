@@ -19,8 +19,9 @@
 - Introduction to the ArcGIS API 4 for JavaScript
 - Fundamentals and Patterns
 - Questions
+- Platform Integration
 - Visualizations (2D and 3D)
-- Extensibility
+- Building Apps
 - Framework Integration
 - _Bonus - Custom Builds_
 - Questions
@@ -133,7 +134,7 @@ const map = new Map({
 
 - or by specifying them
 
-<iframe height='600' scrolling='no' title='Basemaps' src='//codepen.io/odoe/embed/preview/WEPydQ/?height=600&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/WEPydQ/'>Basemaps</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Basemaps' src='//codepen.io/odoe/embed/preview/WEPydQ/?height=600&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/WEPydQ/'>Basemaps</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -160,7 +161,7 @@ const map = new Map({
 
 - `Map.layers` contains `Layer` objects with the operational data the user interacts with.
 
-<iframe height='600' scrolling='no' title='Webinar - Add a FeatureLayer' src='//codepen.io/odoe/embed/preview/YxJEba/?height=300&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/YxJEba/'>Webinar - Add a FeatureLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Webinar - Add a FeatureLayer' src='//codepen.io/odoe/embed/preview/YxJEba/?height=300&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/YxJEba/'>Webinar - Add a FeatureLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -169,21 +170,8 @@ const map = new Map({
 
 - `GroupLayer`
 
-<iframe height='600' scrolling='no' title='Webinar - Grouplayer' src='//codepen.io/odoe/embed/preview/RZOjrv/?height=600&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/RZOjrv/'>Webinar - Grouplayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Webinar - Grouplayer' src='//codepen.io/odoe/embed/preview/RZOjrv/?height=600&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/RZOjrv/'>Webinar - Grouplayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
----
-
-## Basemap, Ground and Operational Layers
-
-- They can be easily searched using `Map.allLayers`
-  - contains the layers from every collection
-
-```js
-const layer = map.allLayers.find((layer) => {
-  return layer.title === "what I'm looking for";
-});
-```
 
 ---
 
@@ -208,7 +196,7 @@ const layer = map.allLayers.find((layer) => {
 
 - `Layer.fromPortalItem(...)`
 
-<iframe height='600' scrolling='no' title='Portal Items' src='//codepen.io/odoe/embed/preview/OjQLmK/?height=600&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/OjQLmK/'>Portal Items</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Portal Items' src='//codepen.io/odoe/embed/preview/OjQLmK/?height=600&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/OjQLmK/'>Portal Items</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -217,7 +205,7 @@ const layer = map.allLayers.find((layer) => {
 
 - MapImageLayer
 
-<iframe height='600' scrolling='no' title='Webinar - MapImageLayer' src='//codepen.io/odoe/embed/preview/EvJbvE/?height=600&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/EvJbvE/'>Webinar - MapImageLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Webinar - MapImageLayer' src='//codepen.io/odoe/embed/preview/EvJbvE/?height=600&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/EvJbvE/'>Webinar - MapImageLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -226,7 +214,7 @@ const layer = map.allLayers.find((layer) => {
 
 - MapImageLayer
 
-<iframe height='600' scrolling='no' title='Webinar - MapImageLayer - Renderer' src='//codepen.io/odoe/embed/preview/rzbYqv/?height=600&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/rzbYqv/'>Webinar - MapImageLayer - Renderer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Webinar - MapImageLayer - Renderer' src='//codepen.io/odoe/embed/preview/rzbYqv/?height=600&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/rzbYqv/'>Webinar - MapImageLayer - Renderer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -235,7 +223,7 @@ const layer = map.allLayers.find((layer) => {
 
 - VectorTileLayer
 
-<iframe height='600' scrolling='no' title='Webinar - VectorTileLayer' src='//codepen.io/odoe/embed/preview/EvJbrd/?height=600&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/EvJbrd/'>Webinar - VectorTileLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Webinar - VectorTileLayer' src='//codepen.io/odoe/embed/preview/EvJbrd/?height=600&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/EvJbrd/'>Webinar - VectorTileLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -295,7 +283,7 @@ const layer = map.allLayers.find((layer) => {
 
 ## LayerViews
 
-<iframe height='600' scrolling='no' title='FeatureLayer' src='//codepen.io/odoe/embed/preview/vJdVpQ/?height=600&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/vJdVpQ/'>FeatureLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='FeatureLayer' src='//codepen.io/odoe/embed/preview/vJdVpQ/?height=600&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/vJdVpQ/'>FeatureLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
@@ -347,7 +335,7 @@ const view = new MapView({
 
 ---
 
-# Default Widgets
+## Default Widgets
 
 - MapView & SceneView <!-- .element: class="fragment" data-fragment-index="1" -->
   - Popup
@@ -359,13 +347,7 @@ const view = new MapView({
 
 ---
 
-# Widgets: SDK
-
-[Widgets in SDK](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attribution.html)
-
----
-
-# Widgets: Popup
+## Widgets: Popup
 
 - Responsive Design
 - Size changes depending on size of view
@@ -379,7 +361,7 @@ const view = new MapView({
 
 ---
 
-# Widgets: Expand
+## Widgets: Expand
 
 - Collapsable button/panel <!-- .element: class="fragment" data-fragment-index="1" -->
 - Can be used with widgets, dom node, HTML <!-- .element: class="fragment" data-fragment-index="2" -->
@@ -387,29 +369,21 @@ const view = new MapView({
 
 ---
 
-# Widgets: Expand Sample
+## Widgets: Expand Sample
 
-- [Expand Sample](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=widgets-expand)
-
-```
-var htmlString = "<div style='background:red'>Hello World</div>";
-
-var node = document.createElement("div");
-node.innerHTML = "Hello World 2";
-node.style.backgroundColor = "blue";
-
-var bgExpand = new Expand({
-  view: view,
-  //content: htmlString,
-  //content: node,
-  content: basemapGallery,
-  expandIconClass: "esri-icon-basemap"
-});
-```
+<iframe height='600' scrolling='no' title='Expand Widget' src='//codepen.io/odoe/embed/preview/MvNYKm/?height=300&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/MvNYKm/'>Expand Widget</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ---
 
-# View
+## Widgets: Expand Sample (Responsive)
+
+<iframe height='568' scrolling='no' title='Expand Widget' src='//codepen.io/odoe/embed/preview/MvNYKm/?height=300&theme-id=31222&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 320px;'>See the Pen <a href='https://codepen.io/odoe/pen/MvNYKm/'>Expand Widget</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
+## View
 
 Useful [view properties](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#properties-summary) for building apps
 
@@ -418,36 +392,47 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 
 ---
 
-# View UI
+## View UI
 
-- View has `ui` property
+- View has [`ui`](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-DefaultUI.html) property
 - Can has `components` that can hold...
   - Widget, DOM node, text, html string
-- [Default UI](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-DefaultUI.html)
+
+![UI](./images/views-ui-layout.jpg)
 
 ---
 
-# View UI: Components
+## View UI
+
+<iframe height='600' scrolling='no' title='Positions' src='//codepen.io/odoe/embed/preview/mMYqGZ/?height=300&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/mMYqGZ/'>Positions</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
+## View UI: Components
 
 - Provide easy way to add/position widgets on a view
-- [SDK](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-DefaultUI.html#components)
+
+```js
+const view = new SceneView({
+  ...
+  components: [
+    "attribution", "navigation-toggle", "compass", "zoom",
+    legend, layeList
+  ]
+});
+```
 
 ---
 
 ## Components Demo
 
-<iframe height='600' scrolling='no' title='Components' src='//codepen.io/odoe/embed/preview/MvdOXm/?height=600&theme-id=31222&default-tab=js,result&embed-version=2&editable=true' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/MvdOXm/'>Components</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='600' scrolling='no' title='Components' src='//codepen.io/odoe/embed/preview/MvdOXm/?height=600&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/MvdOXm/'>Components</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
 
-## Positions Demo
-
-- [UI Positions Demo](https://codepen.io/odoe/pen/mMYqGZ?editors=0010)
-
----
-
-# View: Padding
+## View: Padding
 
 - View will work off a subsection of the full view
 - Useful when UI covers portion of the view
@@ -455,15 +440,10 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 
 ---
 
-# Demo
+## View: Padding
 
-- [View Padding Demo](../demos/view-padding/panel-view-padding.html)
-
----
-
-# Demo
-// maybe cut
-- [View UI Sizes](../demos/view-sizes/panel-dynamic.html)
+<iframe height='600' scrolling='no' title='Padding' src='//codepen.io/odoe/embed/preview/JygoBx/?height=300&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/JygoBx/'>Padding</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ---
 
@@ -510,6 +490,30 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 
 ---
 
+# Building Apps
+
+---
+
+## Building Apps
+
+- No one way to do it
+- We like _TypeScript_
+  - About 80% of ArcGIS JS API 4 is TypeScript
+  - Needed for custom widget development
+  - We provide _decorators_
+- Can use a Framework
+- Can use the API as-is
+
+---
+
+## Building Apps
+
+- Use `Accessor` to manage state
+- Widgets have ViewModels for business logic, can extend on that
+- [Sample starter app](https://github.com/odoe/esrijs4-ts-starter-kit)
+
+---
+
 # 3rd Party JS Frameworks
 # Module loaders
 - Open-source helper libraries and wrappers
@@ -523,9 +527,9 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 # Module loaders
 - [esri-loader](https://github.com/Esri/esri-loader)
 - [angular-esri-loader](https://github.com/tomwayson/angular-esri-loader)
+- [esri-loader-react](https://github.com/davetimmins/esri-loader-react)
 - [ember-esri-loader](https://github.com/Esri/ember-esri-loader)
 - [ember-cli-amd](https://github.com/Esri/ember-cli-amd)
-- [esri-loader-react](https://github.com/davetimmins/esri-loader-react)
 
 ---
 
@@ -535,53 +539,6 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 - Angular (version of choice)
 - Ember
 - VueJS
-
----
-
-## Framework Integration
-
-- React
- - Vanilla React (`setState()`)
- - Redux
- - Preact
- - [react-redux-js4](https://github.com/Esri/react-redux-js4)
-
----
-
-## Framework Integration
-
-- Ember
-  - Full-blown framework
-  - Started the cli craze
-  - Great for teams!
-  - Use the `ember-esri-loader` or `ember-cli-amd`
-
----
-
-## Framework Integration
-
-- Vue
-  - Super simple to get started
-  - Has a cli too!
-  - [vue-jsapi4](https://github.com/odoe/vue-jsapi4)
-
----
-
-## Framework Integration (BONUS!)
-
-- Elm
-  - Completely new programming language
-  - Comes with a UI architecture built-in
-  - [elm-jsapi4](https://github.com/odoe/elm-jsapi4)
-
----
-
-## Framework Integration
-
-- Angular
-  - _In all it's forms_
-  - Changing often!
-  - Try to keep up
 
 ---
 
@@ -603,6 +560,15 @@ Useful [view properties](https://developers.arcgis.com/javascript/latest/api-ref
 - Cons
   - Not fast
   - Can be complicated
+
+---
+
+## Dojo Builds
+
+- npm
+  - `npm install --save arcgis-js-api`
+- bower
+  - `bower install arcgis-js-api@4.4.0`
 
 ---
 
