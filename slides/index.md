@@ -356,20 +356,8 @@ const view = new MapView({
 
 - Property watching
 
-```js
-  map.watch("basemap.title", (
-    newValue, // new title
-    oldValue, // old title
-    propertyName // basemap.title,
-    target // map
-    ) => {
-    console.log("watch", newValue);
-  });
-
-  watchutils.watch(map, "basemap.title", (title) => {
-    console.log("watch", title);
-  });
-```
+<iframe height='600' scrolling='no' title='Property Changes' src='//codepen.io/odoe/embed/LjKaxj/?height=366&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/LjKaxj/'>Property Changes</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ---
 
