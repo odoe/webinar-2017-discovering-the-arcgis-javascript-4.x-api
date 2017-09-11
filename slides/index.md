@@ -461,14 +461,28 @@ const view = new SceneView({
 
 ---
 
+# Platform Demo
+
+<iframe height='600' scrolling='no' title='Platform' src='//codepen.io/andygup/embed/preview/vJoOEL/?height=300&theme-id=theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/andygup/pen/vJoOEL/'>vJoOEL</a> by Andy (<a href='https://codepen.io/andygup'>@andygup</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
 # Visualizations
 
 ---
 
 ## Visualizations
 
-- Smart Mapping (platform)
+- [Smart Mapping (platform) demo](http://www.arcgis.com/home/search.html?q=NYC%20Taxi%20Data%20Snapshot&t=content&start=1&sortOrder=desc&sortField=relevance)
 - Consumable via Portal Items
+
+---
+
+# Smart Mapping Demo
+
+<iframe height='600' scrolling='no' title='Smart Mapping' src='//codepen.io/andygup/embed/preview/zdggNE/?height=300&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/andygup/pen/zdggNE/'>zdggNE</a> by Andy (<a href='https://codepen.io/andygup'>@andygup</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ---
 
@@ -737,7 +751,7 @@ module.exports = {
 ---
 
 # Take our quick survey!
-### URL goes here?  
+### You'll receive it right after webinar ends
 
 <br>
  
