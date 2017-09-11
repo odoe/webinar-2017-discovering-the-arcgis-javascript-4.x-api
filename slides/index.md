@@ -490,6 +490,82 @@ const view = new SceneView({
 
 ---
 
+## WebGL FeatureLayer
+
+- Beta feature in 4.5 release
+
+```js
+var dojoConfig = {
+  has: {
+    "esri-featurelayer-webgl": 1
+  }
+};
+```
+
+---
+
+## WebGL FeatureLayer
+
+<iframe height='600' scrolling='no' title='WebGL FeatureLayer' src='//codepen.io/odoe/embed/preview/zEOZKz/?height=300&theme-id=31222&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/zEOZKz/'>WebGL FeatureLayer</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
+## Draw API and SketchViewModel
+
+---
+
+## SketchViewModel
+
+```js
+const sketch = new SketchViewModel({
+  view: view,
+  pointSymbol: {
+    ...
+  },
+  polylineSymbol: {
+    ...
+  },
+  polygonSymbol: {
+    ...
+  }
+});
+
+sketch.on("draw-complete", (evt) => ...);
+sketch.create("polyline"); // point, polyline, polygon
+```
+
+---
+
+## SketchViewModel
+
+<iframe height='600' scrolling='no' title='YrKVBW' src='//codepen.io/odoe/embed/preview/YrKVBW/?height=300&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/YrKVBW/'>YrKVBW</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
+## Draw API
+
+- More fine-grained control
+
+```js
+const draw = new Draw({ view });
+const action = draw.create(type); // point, polygon, polyline
+action.on("vertex-add", (event) => ...);
+action.on("vertex-remove", (event) => ...);
+action.on("cursor-update", (event) => ...);
+action.on("draw-complete", (event) => ...);
+```
+
+---
+
+## Draw API
+
+<iframe height='600' scrolling='no' title='Draw API' src='//codepen.io/odoe/embed/preview/zEOdBz/?height=300&theme-id=31222&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/zEOdBz/'>Draw API</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
 # Building Apps
 
 ---
