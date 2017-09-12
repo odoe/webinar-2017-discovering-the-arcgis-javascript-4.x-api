@@ -432,25 +432,6 @@ const view = new SceneView({
 
 ---
 
-## View: Padding
-
-- View will work off a subsection of the full view
-- Useful when UI covers portion of the view
-- [SDK](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#padding)
-
----
-
-## View: Padding
-
-<iframe height='600' scrolling='no' title='Padding' src='//codepen.io/odoe/embed/preview/JygoBx/?height=300&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/odoe/pen/JygoBx/'>Padding</a> by Rene Rubalcava (<a href='https://codepen.io/odoe'>@odoe</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
----
-
-# Break - Questions
-
----
-
 # Platform Integration
 ### With ArcGIS Portal and ArcGIS Online
 
