@@ -479,7 +479,7 @@ const view = new SceneView({
 
 ---
 
-# Smart Mapping Demo
+## Smart Mapping Demo
 
 <iframe height='600' scrolling='no' title='Smart Mapping' src='//codepen.io/andygup/embed/preview/zdggNE/?height=300&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/andygup/pen/zdggNE/'>zdggNE</a> by Andy (<a href='https://codepen.io/andygup'>@andygup</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
@@ -488,8 +488,18 @@ const view = new SceneView({
 
 ## Visualizations
 
-- Renderers
-- Arcade Expressions
+- [Renderers](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html)
+
+<iframe height='600' scrolling='no' title='SimpleRenderer' src='//codepen.io/andygup/embed/preview/qPBqVw/?height=265&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/andygup/pen/qPBqVw/'>SimpleRenderer</a> by Andy (<a href='https://codepen.io/andygup'>@andygup</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
+## Visualizations
+- [Arcade Expressions](https://developers.arcgis.com/arcade/)
+
+<iframe height='600' scrolling='no' title='SimpleArcade' src='//codepen.io/andygup/embed/preview/aLbBgg/?height=265&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/andygup/pen/aLbBgg/'>SimpleArcade</a> by Andy (<a href='https://codepen.io/andygup'>@andygup</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ---
 
