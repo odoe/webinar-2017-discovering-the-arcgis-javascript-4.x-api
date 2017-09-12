@@ -21,9 +21,9 @@
 - Questions
 - Platform Integration
 - Visualizations (2D and 3D)
-- Building Apps
-- Framework Integration
+- Upcoming Features
 - _Bonus - Custom Builds_
+- Framework Integration
 - Questions
 
 ---
@@ -612,58 +612,6 @@ action.on("draw-complete", (event) => ...);
 
 ---
 
-# Building Apps
-
----
-
-## Building Apps
-
-- No one way to do it
-- We like _TypeScript_
-  - About 80% of ArcGIS JS API 4 is TypeScript
-  - Needed for custom widget development
-  - We provide _decorators_
-- Can use a Framework
-- Can use the API as-is
-
----
-
-## Building Apps
-
-- Use `Accessor` to manage state
-- Widgets have ViewModels for business logic, can extend on that
-- [Sample starter app](https://github.com/odoe/esrijs4-ts-starter-kit)
-
----
-
-# 3rd Party JS Frameworks
-# Module loaders
-- Open-source helper libraries and wrappers
-- Small internal + large external community effort
-- Not officially supported by Esri Tech Support
-
-
----
-
-# 3rd Party JS Frameworks
-# Module loaders
-- [esri-loader](https://github.com/Esri/esri-loader)
-- [angular-esri-loader](https://github.com/tomwayson/angular-esri-loader)
-- [esri-loader-react](https://github.com/davetimmins/esri-loader-react)
-- [ember-esri-loader](https://github.com/Esri/ember-esri-loader)
-- [ember-cli-amd](https://github.com/Esri/ember-cli-amd)
-
----
-
-## Framework Integration
-
-- React
-- Angular (version of choice)
-- Ember
-- VueJS
-
----
-
 # Custom Builds
 
 ---
@@ -762,6 +710,24 @@ module.exports = {
 
 ---
 
+# 3rd Party JS Frameworks
+# Module loaders
+- Open-source helper libraries and wrappers
+- Small internal + large external community effort
+- Not officially supported by Esri Tech Support
+
+---
+
+# 3rd Party JS Frameworks
+# Module loaders
+- [esri-loader](https://github.com/Esri/esri-loader)
+- [angular-esri-loader](https://github.com/tomwayson/angular-esri-loader)
+- [esri-loader-react](https://github.com/davetimmins/esri-loader-react)
+- [ember-esri-loader](https://github.com/Esri/ember-esri-loader)
+- [ember-cli-amd](https://github.com/Esri/ember-cli-amd)
+
+---
+
 # Developer Resources
 - [TypeScript definition files, Bower, JSHint](http://esriurl.com/resources)
 - [github.com/esri](https://github.com/esri)
@@ -788,7 +754,7 @@ module.exports = {
 <br>
  
 # Sign up for future webinars!
-### URL goes here?
+### http://go.esri.com/geodev
  
 
 ---
