@@ -525,7 +525,7 @@ var dojoConfig = {
 
 ---
 
-## Draw API and SketchViewModel
+# Draw API and SketchViewModel
 
 ---
 
@@ -545,7 +545,7 @@ const sketch = new SketchViewModel({
   }
 });
 
-sketch.on("draw-complete", (evt) => ...);
+sketch.on("draw-complete", (event) => ...);
 sketch.create("polyline"); // point, polyline, polygon
 ```
 
