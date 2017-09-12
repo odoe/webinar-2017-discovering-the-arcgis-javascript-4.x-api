@@ -503,10 +503,32 @@ const view = new SceneView({
 
 ---
 
+## Wind Arcade Demo
+
+<iframe height='600' scrolling='no' title='Wind Arcade' src='//codepen.io/andygup/embed/preview/prXPWG/?height=265&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/andygup/pen/prXPWG/'>Wind Arcade</a> by Andy (<a href='https://codepen.io/andygup'>@andygup</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
+---
+
 ## Visualizations
 
-- 3D Maps
-- 3D Symbology
+- [3D Maps](https://codepen.io/andygup/pen/mBdmrb)
+- [3D Local Scenes](https://developers.arcgis.com/javascript/latest/sample-code/scene-local/live/index.html)
+- [3D WebScene](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=layers-scenelayer-filter-query)
+
+---
+
+## 3D Symbols
+
+- 3D Symbol, Symbol Layer, material property
+- [3D Symbols](https://developers.arcgis.com/javascript/latest/guide/creating-visualizations-manually/index.html#symbols-3d)
+- [Web Style Symbols](https://developers.arcgis.com/javascript/latest/guide/esri-web-style-symbols/index.html)
+
+---
+
+## 3D Demo
+
+## DEMO GOES HERE!
 
 ---
 
