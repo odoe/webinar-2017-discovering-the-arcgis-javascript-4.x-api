@@ -1,7 +1,3 @@
-<!-- .slide: data-background="images/webinar-start.jpg" -->
-
----
-
 <!-- .slide: data-background="images/webinar-title.jpg" -->
 
 
@@ -16,7 +12,7 @@
 
 # Agenda
 
-- Introduction to the ArcGIS API 4 for JavaScript
+- Introduction to the ArcGIS API 4.x for JavaScript
 - Fundamentals and Patterns
 - Questions
 - Platform Integration
@@ -28,7 +24,7 @@
 
 ---
 
-# Introduction to the ArcGIS API 4 for JavaScript
+# Introduction to the ArcGIS API 4.x for JavaScript
 
 - Simplified and consistent API <!-- .element: class="fragment" data-fragment-index="1" -->
 - Write apps in ES6 or TypeScript <!-- .element: class="fragment" data-fragment-index="1" -->
