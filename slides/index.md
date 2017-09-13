@@ -3,6 +3,10 @@
 
 ---
 
+![attendee-panel](./images/attendees.jpg)
+
+---
+
 # Presenters
 
 ### Andy Gup – [@agup](https://twitter.com/agup)
