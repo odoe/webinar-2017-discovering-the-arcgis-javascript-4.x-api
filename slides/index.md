@@ -14,12 +14,11 @@
 
 - Introduction to the ArcGIS API 4.x for JavaScript
 - Fundamentals and Patterns
-- Questions
 - Platform Integration
 - Visualizations (2D and 3D)
 - Upcoming Features
 - _Bonus - Custom Builds_
-- Framework Integration
+- JS Framework Integration
 - Questions
 
 ---
@@ -424,8 +423,7 @@ const view = new SceneView({
 
 <br>
 - Creating Hosted Services
-- ArcGIS REST API
-- Importing Web Maps
+- Consuming those services in the API
 
 ---
 
@@ -465,9 +463,7 @@ const view = new SceneView({
 
 ## Visualizations
 - [Arcade Expressions](https://developers.arcgis.com/arcade/)
-
-<iframe height='600' scrolling='no' title='SimpleArcade' src='//codepen.io/andygup/embed/preview/aLbBgg/?height=265&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/andygup/pen/aLbBgg/'>SimpleArcade</a> by Andy (<a href='https://codepen.io/andygup'>@andygup</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+- [Arcade Demo](https://codepen.io/andygup/pen/aLbBgg?editors=1010)
 
 ---
 
@@ -481,14 +477,8 @@ const view = new SceneView({
 ## Visualizations
 
 - [3D Maps](https://codepen.io/andygup/pen/mBdmrb)
+- [3D SceneLayer](https://developers.arcgis.com/javascript/latest/sample-code/layers-scenelayer-filter-query/live/index.html)
 - [3D Local Scenes](https://developers.arcgis.com/javascript/latest/sample-code/scene-local/live/index.html)
-
----
-
-## 3D Symbols
-
-- [3D Symbols](https://developers.arcgis.com/javascript/latest/guide/creating-visualizations-manually/index.html#symbols-3d)
-- [Web Style Symbols](https://developers.arcgis.com/javascript/latest/guide/esri-web-style-symbols/index.html)
 
 ---
 
