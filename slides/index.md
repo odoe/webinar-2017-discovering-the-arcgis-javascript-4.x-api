@@ -1,7 +1,3 @@
-<!-- .slide: data-background="images/webinar-start.jpg" -->
-
----
-
 <!-- .slide: data-background="images/webinar-title.jpg" -->
 
 
@@ -16,19 +12,18 @@
 
 # Agenda
 
-- Introduction to the ArcGIS API 4 for JavaScript
+- Introduction to the ArcGIS API 4.x for JavaScript
 - Fundamentals and Patterns
-- Questions
 - Platform Integration
 - Visualizations (2D and 3D)
 - Upcoming Features
 - _Bonus - Custom Builds_
-- Framework Integration
+- JS Framework Integration
 - Questions
 
 ---
 
-# Introduction to the ArcGIS API 4 for JavaScript
+# Introduction to the ArcGIS API 4.x for JavaScript
 
 - Simplified and consistent API <!-- .element: class="fragment" data-fragment-index="1" -->
 - Write apps in ES6 or TypeScript <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -428,19 +423,18 @@ const view = new SceneView({
 
 <br>
 - Creating Hosted Services
-- ArcGIS REST API
-- Importing Web Maps and Scenes
+- Consuming those services in the API
 
 ---
 
-# Platform Demo
+## Platform Demo
 
 <iframe height='600' scrolling='no' title='Platform' src='//codepen.io/andygup/embed/preview/vJoOEL/?height=300&theme-id=theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/andygup/pen/vJoOEL/'>vJoOEL</a> by Andy (<a href='https://codepen.io/andygup'>@andygup</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---
 
-# Visualizations
+## Visualizations
 
 ---
 
@@ -469,9 +463,7 @@ const view = new SceneView({
 
 ## Visualizations
 - [Arcade Expressions](https://developers.arcgis.com/arcade/)
-
-<iframe height='600' scrolling='no' title='SimpleArcade' src='//codepen.io/andygup/embed/preview/aLbBgg/?height=265&theme-id=31222&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/andygup/pen/aLbBgg/'>SimpleArcade</a> by Andy (<a href='https://codepen.io/andygup'>@andygup</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+- [Arcade Demo](https://codepen.io/andygup/pen/aLbBgg?editors=1010)
 
 ---
 
@@ -485,22 +477,8 @@ const view = new SceneView({
 ## Visualizations
 
 - [3D Maps](https://codepen.io/andygup/pen/mBdmrb)
+- [3D SceneLayer](https://developers.arcgis.com/javascript/latest/sample-code/layers-scenelayer-filter-query/live/index.html)
 - [3D Local Scenes](https://developers.arcgis.com/javascript/latest/sample-code/scene-local/live/index.html)
-- [3D WebScene](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/index.html?sample=layers-scenelayer-filter-query)
-
----
-
-## 3D Symbols
-
-- 3D Symbol, Symbol Layer, material property
-- [3D Symbols](https://developers.arcgis.com/javascript/latest/guide/creating-visualizations-manually/index.html#symbols-3d)
-- [Web Style Symbols](https://developers.arcgis.com/javascript/latest/guide/esri-web-style-symbols/index.html)
-
----
-
-## 3D Demo
-
-## DEMO GOES HERE!
 
 ---
 
@@ -683,7 +661,7 @@ module.exports = {
 ---
 
 # 3rd Party JS Frameworks
-# Module loaders
+## Module loaders
 - Open-source helper libraries and wrappers
 - Small internal + large external community effort
 - Not officially supported by Esri Tech Support
@@ -691,7 +669,7 @@ module.exports = {
 ---
 
 # 3rd Party JS Frameworks
-# Module loaders
+## Module loaders
 - [esri-loader](https://github.com/Esri/esri-loader)
 - [angular-esri-loader](https://github.com/tomwayson/angular-esri-loader)
 - [esri-loader-react](https://github.com/davetimmins/esri-loader-react)
@@ -700,16 +678,41 @@ module.exports = {
 
 ---
 
+# 3rd Party JS Frameworks
+## Module loaders
+```js
+  ngOnInit() {
+    // only load the ArcGIS API for JavaScript when this component is loaded
+    return this.esriLoader.load({
+      // use a specific version of the API instead of the latest
+      url: 'https://js.arcgis.com/4.4/'
+    }).then(() => {
+      // load the map class needed to create a new map
+      this.esriLoader.loadModules(['esri/map']).then(([Map]) => {
+        // create the map at the DOM element in this component
+        this.map = new Map(this.mapEl.nativeElement, {
+          center: [-118, 34.5],
+          zoom: 8,
+          basemap: 'dark-gray'
+        });
+      });
+    });
+  }
+
+```
+
+---
+
 # Developer Resources
-- [TypeScript definition files, Bower, JSHint](http://esriurl.com/resources)
 - [github.com/esri](https://github.com/esri)
+   - [JS API Resources](http://esriurl.com/resources)
 - [GeoNet Community for Web Developers](https://geonet.esri.com/community/developers/web-developers/arcgis-api-for-javascript)
 
 ---
 
 # Blogs
-- [ArcGIS Blog](https://blogs.esri.com/esri/arcgis/tag/javascript/)
-- [GeoDev Blog](https://geonet.esri.com/groups/geodev)
+- [ArcGIS Blog](https://blogs.esri.com/esri/arcgis/tag/javascript/) => tiny.cc/arcgis_blog
+- [GeoDev Blog](https://geonet.esri.com/groups/geodev) => tiny.cc/geodev_blog
 - [odoe.net](http://odoe.net/blog/)
 
 ---
