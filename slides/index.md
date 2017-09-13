@@ -492,12 +492,6 @@ const view = new SceneView({
 
 ---
 
-## 3D Demo
-
-## DEMO GOES HERE!
-
----
-
 # Upcoming Features
 
 ---
@@ -691,6 +685,31 @@ module.exports = {
 - [esri-loader-react](https://github.com/davetimmins/esri-loader-react)
 - [ember-esri-loader](https://github.com/Esri/ember-esri-loader)
 - [ember-cli-amd](https://github.com/Esri/ember-cli-amd)
+
+---
+
+# 3rd Party JS Frameworks
+## Module loaders
+```js
+  ngOnInit() {
+    // only load the ArcGIS API for JavaScript when this component is loaded
+    return this.esriLoader.load({
+      // use a specific version of the API instead of the latest
+      url: 'https://js.arcgis.com/4.4/'
+    }).then(() => {
+      // load the map class needed to create a new map
+      this.esriLoader.loadModules(['esri/map']).then(([Map]) => {
+        // create the map at the DOM element in this component
+        this.map = new Map(this.mapEl.nativeElement, {
+          center: [-118, 34.5],
+          zoom: 8,
+          basemap: 'dark-gray'
+        });
+      });
+    });
+  }
+
+```
 
 ---
 
