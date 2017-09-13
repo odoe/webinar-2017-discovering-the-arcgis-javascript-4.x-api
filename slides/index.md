@@ -743,8 +743,6 @@ module.exports = {
 
 ![questions](./images/questions.gif)
 
-## developeroutreach@esri.com
-
 
 ---
 
